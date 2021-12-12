@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "web_project"
+version = "0.1.0"
+description = "A simple Django project based on a tutorial."
+authors = ["Anthony Cruz <cruzantada@gmail.com>"]
+license = "MIT"
+readme = README.md
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.0"
+python-decouple = "^3.5"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
