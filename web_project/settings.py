@@ -119,6 +119,12 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+# The location where the collectstatic command collects static files from apps.
+# A dedicated static file server is typically used in production to serve files
+# from this location, rather than relying on the app server to serve those files
+# from various locations in the app. Doing so results in better overall performance.
+STATIC_ROOT = BASE_DIR / "static_collected"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
